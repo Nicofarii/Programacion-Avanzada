@@ -13,7 +13,6 @@ def hoja_de_vida():
 def home_f():
    return render_template('HomeF.html')
 
-
 @app.route('/PagDatos.html')
 def hoja_de_vida2():
    return render_template('PagDatos.html')

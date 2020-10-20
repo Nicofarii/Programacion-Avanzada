@@ -1,0 +1,32 @@
+body{
+    font-size: 1.5em;
+}
+ h1{
+     color: rgb(153, 66, 51);
+ }
+
+ section nav nav{
+     background-color: aquamarine;
+     margin: 1em;
+     padding: 1em;
+     
+ }
+
+ nav nav{
+     background-color: brown;
+     margin: 1em;
+     padding: 1em;
+     
+ }
+
+
+center h3{
+    color: chocolate;
+}
+
+section center{
+    background-color: darkgreen;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+}
