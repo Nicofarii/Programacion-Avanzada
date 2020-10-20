@@ -1,0 +1,68 @@
+*{
+    margin: 10px;
+    padding: 10px;
+}
+body{
+    background: #eeeeee;
+}
+header{
+    color: black;
+    background: rgba(55, 58, 64, 0.5);
+    display: flex;
+    border-radius: 5px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 30px;
+}
+
+.cuerpo{
+    display: flex;
+    
+}
+.menu{
+     display: flex;
+     align-items: center;
+     margin-left: 300px;
+     justify-content: space-around;
+     
+                                            
+}
+a:hover{
+    background: #19d3da;
+    border-radius: 5px;
+
+}
+
+.info{
+    margin-left: 300px;
+    display: inline-block;
+    align-self: center;
+    
+}
+.image{
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.redes{
+    display: inline-block;
+}
+a img{
+    height: 3em;
+    width: auto;
+}
+.datosp{
+    font-size: 50px;
+}
+table{
+    text-align: left;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hoja de Vida</title>
+    <link rel='stylesheet' type='text/css'  href="{{ url_for('static', filename ='EstilosF.css') }}">
+    
+</head>
+    <body>
+        <header>
+        <div class="titulo">
+            <h1>Hoja de Vida</h1>
+        </div>
+        
+        <nav class="menu">
+            <a href="DatosF.html">Datos Personales</a>
+            <a href="FormacionF.html">Formacion Academica</a>
+            <a href="TecnologiasF.html">Tecnologias de Interes</a>
+            <a href="/" >HOME </a>
+        </nav>
+        </header>
+        <section class="cuerpo">
+            <div class="info">
+                <h2><i>Nicolas Mendez Farias</i></h2>
+                <h2><i>Codigo:20182020096</i></h2>
+            </div>
+            <div class="image">
+                <img src="{{ url_for('static', filename='img/fotico.jpeg')}}" height="300px">
+            </div>
+        </section>
+        <div>
+            <a href="/Home.html" >HOME </a>
+        </div>
+ 
+    </body>
+</html>
