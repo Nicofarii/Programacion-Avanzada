@@ -1,0 +1,5 @@
+jairo,3,1,0,10,[1, 2, 3],False
+jairo,3,1,0,9,[3, 2, 1],False
+jairo,3,0,1,8,[1, 4, 5],False
+jairo,3,0,1,7,[2, 5, 6],False
+jairo,3,3,0,6,[4, 2, 7],True
