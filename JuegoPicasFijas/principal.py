@@ -99,7 +99,7 @@ while intentos>0:
     fijas=0
 
 
-#Guarda los mejores partidas
+#Guarda los mejores intentos
 archivo = open("puntaje.txt", "r")
 ganador= []
 for linea in archivo.readlines():
