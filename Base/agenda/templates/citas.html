@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Citas</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="{{url_for('static' , filename='estilos.css')}}">
+    </head>
+    <body>
+
+        <center>
+            <h1>Citas</h1>
+        <center>
+
+            <nav class="menu">
+                <a href="menu">Home</a>
+                <a href="usuarios">Usuarios</a>
+                <a href="citas">Citas</a>
+                <a href="contactos">Contactos</a>
+                <a href="todos">Todos</a>
+            </nav>
+
+        <table border='1'>
+            <tr>
+                <th>Lugar</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Descripcion</th>
+                <th colspan="3">Administracion</th>
+            </tr>
+            {% for u in citas%}
+            <tr>
+                <td>{{ u[2] }}</td>
+                <td>{{ u[3] }}</td>
+                <td>{{ u[4] }}</td>
+                <td>{{ u[5] }}</td>
+                <td><input type="button" value="Agregar"></td>
+                <td><input type="button" value="Eliminar"></td>
+                <td><input type="button" value="Modificar"></td>
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+
+</html>
