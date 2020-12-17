@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Editar Citas</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="{{url_for('static' , filename='estilos.css')}}">
+    </head>
+    
+    <body>
+        <nav class="menu">
+            <a href="menu">Home</a>
+            <a href="usuarios">Usuarios</a>
+            <a href="citas">Citas</a>
+            <a href="contactos">Contactos</a>
+            <a href="todos">Todos</a>
+        </nav>
+
+        <form action="{{ request.path }}" method="POST">
+            <input type="hidden" id="id" name="id" value="{{ citas[0] }}"/>
+            <label for="lugar">Lugar: </label>
+            <input type="text" id="lugar" name="lugar" value="{{ citas[1] }}"/><br>
+            <label for="fecha">Fecha: </label>
+            <input type="date" id="fecha" name="fecha" value="{{ citas[2] }}"/><br>
+            <label for="hora">Hora: </label>
+            <input type="time" id="hora" name="hora" value="{{ citas[3] }}"/><br>
+            <label for="descripcion">Descripcion: </label>
+            <input type="text" id="descripcion" name="descripcion" value="{{ citas[4] }}"/><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

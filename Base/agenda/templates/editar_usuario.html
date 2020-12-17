@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Editar Usuarios</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="{{url_for('static' , filename='estilos.css')}}">
+    </head>
+    
+    <body>
+        <nav class="menu">
+            <a href="menu">Home</a>
+            <a href="usuarios">Usuarios</a>
+            <a href="citas">Citas</a>
+            <a href="contactos">Contactos</a>
+            <a href="todos">Todos</a>
+        </nav>
+
+        <form action="{{ request.path }}" method="POST">
+            <input type="hidden" id="id" name="id" value="{{ usuario[0] }}"/>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" value="{{ usuario[1] }}"/><br>
+            <label for="clave">Clave: </label>
+            <input type="password" id="clave" name="clave"/><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

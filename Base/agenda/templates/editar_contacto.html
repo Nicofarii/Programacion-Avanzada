@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Editar Contactos</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="{{url_for('static' , filename='estilos.css')}}">
+    </head>
+    
+    <body>
+        <nav class="menu">
+            <a href="menu">Home</a>
+            <a href="usuarios">Usuarios</a>
+            <a href="citas">Citas</a>
+            <a href="contactos">Contactos</a>
+            <a href="todos">Todos</a>
+        </nav>
+
+        <form action="{{ request.path }}" method="POST">
+            <input type="hidden" id="id" name="id" value="{{ contactos[0] }}"/>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" value="{{ contactos[1] }}"/><br>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" value="{{ contactos[2] }}"/><br>
+            <label for="direccion">Direccion: </label>
+            <input type="text" id="direccion" name="direccion" value="{{ contactos[3] }}"/><br>
+            <label for="telefono">Telefono: </label>
+            <input type="text" id="telefono" name="telefono" value="{{ contactos[4] }}"/><br>
+            <label for="email">Correo Electronico: </label>
+            <input type="text" id="email" name="email" value="{{ contactos[4] }}"/><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

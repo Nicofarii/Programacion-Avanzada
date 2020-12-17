@@ -34,12 +34,12 @@
                 <td>{{ u[3] }}</td>
                 <td>{{ u[4] }}</td>
                 <td>{{ u[5] }}</td>
-                <td><input type="button" value="Agregar"></td>
-                <td><input type="button" value="Eliminar"></td>
-                <td><input type="button" value="Modificar"></td>
+                <td><a href="/eliminar_cita?id={{ u[0] }}">Eliminar</a> </td>
+                <td><a href="/actualizar_cita?id={{ u[0] }}">Modificar</a></td>
             </tr>
         {% endfor %}
         </table>
+        <a href="/agregar_cita" class="add">Agregar</a>
     </body>
 
 </html>
