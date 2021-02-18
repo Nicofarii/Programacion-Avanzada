@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js" language="JavaScript"></script>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body onload="iniciar();">
+        <section id="calculadora">
+            <div id="display"> </div>
+            <button id="numero" onclick="actualizar(this);">7</button>
+            <button id="numero" onclick="actualizar(this);">8</button>
+            <button id="numero" onclick="actualizar(this);">9</button>
+            <button id="operador" onclick="actualizar(this);">/</button>
+            <br>
+            <button id="numero" onclick="actualizar(this);">4</button>
+            <button id="numero" onclick="actualizar(this);">5</button>
+            <button id="numero" onclick="actualizar(this);">6</button>
+            <button id="operador" onclick="actualizar(this);">*</button>
+            <br>
+            <button id="numero" onclick="actualizar(this);">1</button>
+            <button id="numero" onclick="actualizar(this);">2</button>
+            <button id="numero" onclick="actualizar(this);">3</button>
+            <button id="operador" onclick="actualizar(this);">-</button>
+            <br>
+            <button id="numero" onclick="actualizar(this);">0</button>
+            
+            <button id="operador" onclick="evaluar();">=</button>
+            <button id="operador" onclick="actualizar(this);">+</button>
+            <button id="operador" onclick="actualizar(this);">.</button>
+            <br>
+            <button id="operador" onclick="actualizar(this);">(</button>
+            <button id="operador" onclick="actualizar(this);">)</button>
+            <button id="borrador" onclick="iniciar();">C</button>
+            <button id="borrador" onclick="borrar();"><-</button>
+
+        </section>
+    </body>
+</html>
