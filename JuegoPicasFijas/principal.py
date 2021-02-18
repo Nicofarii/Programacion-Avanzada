@@ -76,6 +76,7 @@ while intentos>0:
                 picas+=1
     print("fijas: "+ str(fijas))
     print("picas: "+ str(picas)+"\n")
+    
 
     #Escribe los datos de cada intento en el archivo
     archivo = open("puntaje.txt", "a" )
@@ -83,7 +84,7 @@ while intentos>0:
         ganador=True
     archivo.write(name+","+ str(a)+","+ str(fijas)+","+str(picas)+","+str(numint)+","+str(intento)+","+str(ganador)+"\n")
     archivo.close()
-    numint=numint-1
+    numint=numint-1 
 
     #Condicional cuando gana
     if fijas==len(numero):
